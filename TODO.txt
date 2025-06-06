@@ -1,6 +1,5 @@
 - Async Queue Mode with jobs support using Redis
 - Container separation (API from Task execution)
-- Caching with Redis
 - Kubernetes support
 - Request body size limit at the Kubernetes Ingress level
 - Automated Docker image build for Kubernetes using Kaniko powered by Ansible

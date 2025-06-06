@@ -34,6 +34,13 @@ services:
     environment:
       OPENAI_API_KEY: <Open AI API Key>
       ANTHROPIC_API_KEY: <Anthropic API Key>
+  redis:
+    image: redis
+    container_name: redis-server
+    command: redis-server
+    restart: always
+    networks:
+      - rw_fg_net
 
 networks:
   rw_fg_net:
