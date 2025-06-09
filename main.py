@@ -1,3 +1,4 @@
+import bootstrap_tests
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from llm_adapter import LlmAdapter

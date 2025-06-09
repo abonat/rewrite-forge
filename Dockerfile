@@ -6,7 +6,7 @@ RUN mkdir /opt/rewrite-forge
 
 COPY *.py /opt/rewrite-forge/
 COPY requirements.txt /opt/rewrite-forge/
-#ADD auth /opt/rewrite-forge/auth/
+ADD bootstrap_tests /opt/rewrite-forge/bootstrap_tests/
 
 WORKDIR /opt/rewrite-forge/
 RUN pip install --upgrade pip
