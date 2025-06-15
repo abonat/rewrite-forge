@@ -28,14 +28,13 @@ def answer_question(query: Query):
             detail="Supported styles are:" + ','.join(supported_styles)
         )
 
-    response = {
+    return {
         "original_text": query.text,
         "transformed_text": LlmAdapter(
             prompt=query.text,
             style=query.style if query.style else 'formal'
         ).__repr__()
     }
-    return {"response": response}
 
 @app.get("/health")
 def health_check():
